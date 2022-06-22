@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head lang="pt-BR">
+
+    <title>Heliodon</title>
+    <link rel="stylesheet" href="index.css" />
+
+</head>
+
+<body>
+    <div class="app">
+        <h1>Heliodon</h1>
+        <div class="campos">
+            <label>Latitude: <input oninput="validity.valid||(value='');" id="latitude" type="number" value="0" /> </label>
+            <p>
+                Hemisfério:<br />
+                <label><input name="iradio" type="radio" value="1" />Norte</label>
+                <label><input name="iradio" type="radio" value="0" />Sul</label>
+            </p>
+            Arco:
+            <select id="arco">
+        <option value="0" selected> Selecione o Arco</option>
+        <option value="1">Solstício de Verão</option>
+        <option value="2">Solstício de Inverno</option>
+        <option value="3">Equinócio</option>
+      </select>
+            <p>
+
+                Hora:
+                <select id="hora">
+          <option value="0" selected>Selecione a Hora</option>
+          <option value="5">5:00</option>
+          <option value="6">6:00</option>
+          <option value="7">7:00</option>
+          <option value="8">8:00</option>
+           <option value="9">9:00</option>
+          <option value="10">10:00</option>
+          <option value="11">11:00</option>
+          <option value="12">12:00</option>
+          <option value="13">13:00</option>
+          <option value="14">14:00</option>
+          <option value="15">15:00</option>
+          <option value="16">16:00</option>
+          <option value="17">17:00</option>
+          <option value="18">18:00</option>
+          <option value="19">19:00</option>
+          <option value="20">Dia Inteiro</option>
+        </select>
+            </p>
+        </div>
+        <button onclick="main()">Simular</button>
+        <button onclick="zerar_dados()">Zerar</button>
+
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <a href="https://github.com/PedroPeterPietro" target="_blank">Meu github</a>
+    </footer>
+</body>
